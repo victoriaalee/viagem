@@ -1,0 +1,86 @@
+/********************************/
+/******** 	 Defaults	 ********/
+/********************************/
+
+.no-edge{
+	padding: 0px 0px 0px 0px;
+}
+.center-x{
+	text-align: center;
+}
+.center-y{
+	vertical-align: middle;
+}
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+.inline {
+	display: inline-block;
+}
+.hide {
+	display: hidden;
+}
+.error{
+	font-weight: bold;
+	color: #9c1717;
+}
+
+/********************************/
+/******** 	  Custom	 ********/
+/********************************/
+
+/* Login Button */
+#navi{
+	padding-top: 5px;
+	height: 45px;
+	background-color: #64656d;
+}
+.navbar{
+	padding: 0px;
+	margin: 0px;
+	
+}
+@media (min-width: @screen-lg-min)
+{
+	.navbar{
+		height: 55px;
+	}
+	
+}
+/* Overlay */
+
+/* Search Box */
+.form-box{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	margin-top: 31%;
+}
+	.form-search{
+		width: auto;
+		height: auto;
+	}
+		.form-box .form-control{
+			height: auto;
+			margin: 0 auto;
+		}
+			.form-box input{
+				width: 60%;
+			}
+			.form-box select{
+				width: 40%;
+			}
+.group{
+	margin-bottom: 5px;
+}
+
+/* Registration */
+#register{
+	/*background-color: #d3dff5;*/
+	padding: 10px;
+	width: 50%;
+}
+

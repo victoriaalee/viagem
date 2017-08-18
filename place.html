@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>temp place page</title>
+</head>
+<body>
+<h4><a href="/" id="returnhome">Return home</a></h4><br><br>
+{% if fromHome != 'true' %}
+    <h4 id='back'></h4><br>
+    <script type="text/javascript">
+            $('#back').append('<a href="' + document.referrer + '">Go Back</a>');
+    </script>
+{% endif %}
+<h5>{{result.name}}</h5>
+<h3>{{result.address}}</h3>
+<h3>{{result.phone}}</h3>
+
+{% if result.website == "No website available" %}
+    <h3>{{result.website}}</h3>
+{% else %}
+        <h3><a href="{{result.website}}" id="websitelink">{{result.website}}</a></h3>
+{% endif %}
+
+{% if result.plusurl == "No google plus page available" %}
+    <h3>{{result.plusurl}}</h3>
+{% else %}
+    <h3><a href="{{result.plusurl}}" id="plusurllink">More Info</a></h3>
+{% endif %}
+
+</body>
+</html>
